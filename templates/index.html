@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row top-header">
+                <div class="col-md-6">
+                    <p>Contact No: (510)2988759</p>
+                </div>
+                <div class="col-md-6 email">Email: naweedwahedi2011@gmail.com</div>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="">Naweed Wahedi</a>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <nav class="navbar ">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="">About Me</a></li>
+                                <li><a href="{{ url_for('resume') }}">Resume</a></li>
+                                <li><a href="{{ url_for('education') }}">My Education</a></li>
+                                <li><a href="{{ url_for('projects') }}">My Projects</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="banner">
+            <img src="{{url_for('static',filename='images/banner.JPG')}}">
+        </div>
+        <h1 align="center">Portfolio </h1>
+        <div class="container">
+            <div class="row">
+                <h2>About me</h2>
+                <h4>I am currently pursuing a degree in software engineering and am very enthusiastic about utilizing and improving my programming skills. I am currently experienced in object-oriented programming, developing, testing and debugging code, designing interfaces, and administering systems and networks. I enjoy building on these skills and can learn new programming concepts quickly. In my free time, I enjoy going on road trips, playing volleyball and soccer, and spending time with my family. </h4>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <nav class="navbar ">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="">About Me</a></li>
+                            <li><a href="{{ url_for('resume') }}">Resume</a></li>
+                            <li><a href="{{ url_for('education') }}">My Education</a></li>
+                            <li><a href="{{ url_for('projects') }}">My Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>

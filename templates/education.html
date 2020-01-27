@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Education</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row top-header">
+                <div class="col-md-6">
+                    <p>Contact No: (510)2988759</p>
+                </div>
+                <div class="col-md-6 email">Email:naweedwahedi2011@gmail.com</div>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="{{ url_for('index') }}">Naweed Wahedi</a>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <nav class="navbar ">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="{{ url_for('index') }}">About Me</a></li>
+                                <li><a href="{{ url_for('resume') }}">Resume</a></li>
+                                <li><a href="">My Education</a></li>
+                                <li><a href="{{ url_for('projects') }}">My Projects</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="banner">
+            <img src="{{url_for('static',filename='images/banner.JPG')}}">
+        </div>
+        <h1 align="center">My Education</h1>
+        <div class="container">
+            <div class="row">
+                <h2>Ohlone College</h2>
+                <p>Bachelor of Science in Computer Science.</p>
+                <h2>Karwan University</h2>
+                <p>Diploma in Informational Technology.</p>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <nav class="navbar ">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="{{ url_for('index') }}">About Me</a></li>
+                            <li><a href="{{ url_for('resume') }}">Resume</a></li>
+                            <li><a href="">My Education</a></li>
+                            <li><a href="{{ url_for('projects') }}">My Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>

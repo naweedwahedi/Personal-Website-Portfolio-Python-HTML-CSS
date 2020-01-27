@@ -1,0 +1,55 @@
+.navbar {
+    border-radius: 0px !important;
+    margin-bottom: 0px !important;
+    float: right;
+}
+
+.navbar-inverse {
+    background-color: none;
+    border-color: none !important;
+}
+
+.nav>li>a {
+    color: #fff !important;
+}
+
+.nav>li>a:hover {
+    color: #222 !important;
+}
+
+header {    
+    background-color: #222;
+    padding: 5px 0;
+}    
+
+.top-header {    
+    padding: 10px 15px 6px 15px;
+}
+
+.email {
+    text-align: right !important;
+}    
+
+.banner {    
+    height: 350px;
+    width: 100%;
+}
+
+.banner img {   
+    height: 350px;
+    width: 100%;
+}
+
+footer {
+    background-color: #222;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+
+footer .navbar {
+    float: inherit;
+}
+
+.video {    
+    margin: 50px 0px;
+}
